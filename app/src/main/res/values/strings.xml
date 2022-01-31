@@ -16,4 +16,7 @@
     <string name="activity_func">Through image to activity</string>
     <string name="calculator">Calculator</string>
     <string name="memory">Memory</string>
+    <string name="temp_converter">Temperature converter</string>
+    <string name="from_memory">From memory:</string>
+    <string name="to_main">To Main Activity</string>
 </resources>

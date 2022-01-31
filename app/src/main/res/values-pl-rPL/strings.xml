@@ -12,4 +12,7 @@
     <string name="activity_func">Przez wizerunek do działania</string>
     <string name="calculator">Kalkulator</string>
     <string name="memory">Pamięć</string>
+    <string name="temp_converter">Konwerter temperatury</string>
+    <string name="from_memory">Z pamięci:</string>
+    <string name="to_main">Do głównej aktywności</string>
 </resources>

@@ -19,4 +19,15 @@
     <string name="temp_converter">Temperature converter</string>
     <string name="from_memory">From memory:</string>
     <string name="to_main">To Main Activity</string>
+    <string name="memory_activity">Work with Memory - File System</string>
+    <string name="temp">Temperature:</string>
+    <string name="convert">Convert</string>
+    <string-array name="spinner_array_2">
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    <string name="celsius">Celsius:</string>
+    <string name="kelvin">Kelvin:</string>
+    <string name="fahr">Fehrenheit:</string>
 </resources>

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="101dp"
         android:text="@string/app_info"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,20 +35,18 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="64dp"
         android:text="@string/from_memory"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_func2" />
+        tools:layout_editor_absoluteY="45dp" />
 
     <TextView
         android:id="@+id/name3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="103dp"
+        android:layout_marginEnd="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_func2" />
+        tools:layout_editor_absoluteY="45dp" />
 
     <TextView
         android:id="@+id/surname3"
@@ -72,8 +70,8 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
         android:text="@string/your_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -83,10 +81,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="50dp"
         android:text="@string/your_surname"
         app:layout_constraintEnd_toStartOf="@+id/your_surname_edit_text2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -94,8 +93,8 @@
         android:id="@+id/your_surname_edit_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,8 +104,8 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
         android:text="@string/town"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -115,8 +114,8 @@
         android:id="@+id/your_town_edit_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,32 +125,28 @@
         android:id="@+id/save_to_memory2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
         android:text="@string/save_to_memory"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/your_town_edit_text2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
         android:id="@+id/to_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="86dp"
         android:text="@string/to_main"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save_to_memory2" />
+        app:layout_constraintTop_toBottomOf="@+id/your_town_edit_text2" />
 
     <EditText
         android:id="@+id/your_name_edit_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="26dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"

@@ -15,4 +15,10 @@
     <string name="temp_converter">Konwerter temperatury</string>
     <string name="from_memory">Z pamięci:</string>
     <string name="to_main">Do głównej aktywności</string>
+    <string name="memory_activity">Praca z pamięcią — system plików</string>
+    <string name="temp">Temperatura:</string>
+    <string name="convert">Konwertować</string>
+    <string name="celsius">Celsius:</string>
+    <string name="kelvin">Kelvin:</string>
+    <string name="fahr">Fehrenheit:</string>
 </resources>

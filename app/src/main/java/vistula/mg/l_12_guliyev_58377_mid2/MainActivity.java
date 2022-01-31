@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        readInternal("data.txt");
+        String result = readInternal("data.txt");
+
+        String[] rs = result.split("\\r?\\n");
 
         name = findViewById(R.id.name);
         surname = findViewById(R.id.surname);
@@ -41,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
         saveToMemory = findViewById(R.id.save_to_memory_button);
         goToImages = findViewById(R.id.go_to_images_button);
+
+        name.setText(rs[0]);
+        surname.setText(rs[1]);
+        town.setText(rs[2]);
 
         goToImages.setOnClickListener(new View.OnClickListener() {
             @Override

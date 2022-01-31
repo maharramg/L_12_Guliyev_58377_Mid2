@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">L_12_Guliyev_58377_Mid2</string>
+    <string name="app_info">Maharram Guliyev Midterm 2 App</string>
+    <string name="your_name">Your Name:</string>
+    <string name="your_surname">Your Surname:</string>
+    <string name="hint_your_name">your name</string>
+    <string name="hint_your_surname">your surname</string>
+    <string name="town">Town:</string>
+    <string name="save_to_memory">Save to Memory</string>
+    <string name="go_to_images">Go to Images</string>
+    <string-array name="spinner_array">
+        <item>Baku</item>
+        <item>Ganja</item>
+        <item>Shaki</item>
+    </string-array>
+    <string name="activity_func">Through image to activity</string>
+</resources>

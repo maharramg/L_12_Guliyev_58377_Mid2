@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">L_12_Guliyev_58377_Mid2</string>
+    <string name="app_info">Aplikacja Maharrama Guliyev Midterm 2</string>
+    <string name="your_name">Twoje imię:</string>
+    <string name="your_surname">Twoje nazwisko:</string>
+    <string name="hint_your_name">Twoje imię</string>
+    <string name="hint_your_surname">Twoje nazwisko</string>
+    <string name="town">Miasto:</string>
+    <string name="go_to_images">Przejdź do zdjęć</string>
+    <string name="save_to_memory">Zapisz w pamięci</string>
+    <string name="activity_func">Przez wizerunek do działania</string>
+</resources>

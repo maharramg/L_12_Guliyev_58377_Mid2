@@ -13,9 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.L_12_Guliyev_58377_Mid2">
         <activity
-            android:name=".ImageActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".MemoryActivity"
+            android:parentActivityName=".ImageActivity"
             android:exported="false" />
+        <activity
+            android:name=".CalcActivity"
+            android:parentActivityName=".ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

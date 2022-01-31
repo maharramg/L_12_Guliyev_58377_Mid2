@@ -14,4 +14,6 @@
         <item>Shaki</item>
     </string-array>
     <string name="activity_func">Through image to activity</string>
+    <string name="calculator">Calculator</string>
+    <string name="memory">Memory</string>
 </resources>

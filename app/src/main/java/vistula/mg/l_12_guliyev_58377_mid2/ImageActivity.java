@@ -69,7 +69,7 @@ public class ImageActivity extends AppCompatActivity {
 
     }
 
-    private String readInternal(String fileName){
+    private String readInternal(String fileName) {
         File path = getApplicationContext().getFilesDir();
         File readFrom = new File(path, fileName);
         byte[] content = new byte[(int) readFrom.length()];

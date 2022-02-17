@@ -28,10 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String result = readInternal("data.txt");
-
-        String[] rs = result.split("\\r?\\n");
-
         name = findViewById(R.id.name);
         surname = findViewById(R.id.surname);
         town = findViewById(R.id.town_text);
@@ -44,9 +40,18 @@ public class MainActivity extends AppCompatActivity {
         saveToMemory = findViewById(R.id.save_to_memory_button);
         goToImages = findViewById(R.id.go_to_images_button);
 
-        name.setText(rs[0]);
-        surname.setText(rs[1]);
-        town.setText(rs[2]);
+        File file = new File(getApplicationContext().getFilesDir(), "data.txt");
+
+        if (file.exists()) {
+            String result = readInternal("data.txt");
+
+            String[] rs = result.split("\\r?\\n");
+
+            name.setText(rs[0]);
+            surname.setText(rs[1]);
+            town.setText(rs[2]);
+        }
+
 
         goToImages.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,10 +85,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void writeInternal(String fileName, String content){
+    private void writeInternal(String fileName, String content) {
         File path = getApplicationContext().getFilesDir();
         try {
-            FileOutputStream writer= new FileOutputStream(new File(path, fileName));
+            FileOutputStream writer = new FileOutputStream(new File(path, fileName));
             writer.write(content.getBytes());
             writer.close();
             Toast.makeText(getApplicationContext(), "Wrote to file: " + fileName, Toast.LENGTH_SHORT).show();
@@ -92,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private String readInternal(String fileName){
+    private String readInternal(String fileName) {
         File path = getApplicationContext().getFilesDir();
         File readFrom = new File(path, fileName);
         byte[] content = new byte[(int) readFrom.length()];

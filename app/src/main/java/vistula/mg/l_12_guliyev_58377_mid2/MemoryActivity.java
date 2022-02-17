@@ -88,10 +88,10 @@ public class MemoryActivity extends AppCompatActivity {
         });
     }
 
-    private void writeInternal(String fileName, String content){
+    private void writeInternal(String fileName, String content) {
         File path = getApplicationContext().getFilesDir();
         try {
-            FileOutputStream writer= new FileOutputStream(new File(path, fileName));
+            FileOutputStream writer = new FileOutputStream(new File(path, fileName));
             writer.write(content.getBytes());
             writer.close();
             Toast.makeText(getApplicationContext(), "Wrote to file: " + fileName, Toast.LENGTH_SHORT).show();
@@ -100,7 +100,7 @@ public class MemoryActivity extends AppCompatActivity {
         }
     }
 
-    private String readInternal(String fileName){
+    private String readInternal(String fileName) {
         File path = getApplicationContext().getFilesDir();
         File readFrom = new File(path, fileName);
         byte[] content = new byte[(int) readFrom.length()];

@@ -44,32 +44,32 @@ public class CalcActivity extends AppCompatActivity {
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if(spinner.getSelectedItem().toString().equals("Celsius")){
-                   celsius_result = tempValue.getText().toString();
-                   double c2f = C2F(Double.parseDouble(tempValue.getText().toString()));
-                   double c2k = C2K(Double.parseDouble(tempValue.getText().toString()));
+                if (spinner.getSelectedItem().toString().equals("Celsius")) {
+                    celsius_result = tempValue.getText().toString();
+                    double c2f = C2F(Double.parseDouble(tempValue.getText().toString()));
+                    double c2k = C2K(Double.parseDouble(tempValue.getText().toString()));
 
-                   fahr_result = String.valueOf(c2f);
-                   kelvin_result = String.valueOf(c2k);
-               }else if(spinner.getSelectedItem().toString().equals("Kelvin")){
-                   kelvin_result = tempValue.getText().toString();
-                   double k2f = K2F(Double.parseDouble(tempValue.getText().toString()));
-                   double k2c = K2C(Double.parseDouble(tempValue.getText().toString()));
+                    fahr_result = String.valueOf(c2f);
+                    kelvin_result = String.valueOf(c2k);
+                } else if (spinner.getSelectedItem().toString().equals("Kelvin")) {
+                    kelvin_result = tempValue.getText().toString();
+                    double k2f = K2F(Double.parseDouble(tempValue.getText().toString()));
+                    double k2c = K2C(Double.parseDouble(tempValue.getText().toString()));
 
-                   fahr_result = String.valueOf(k2f);
-                   celsius_result = String.valueOf(k2c);
-               }else{
-                   fahr_result = tempValue.getText().toString();
-                   double f2c = F2C(Double.parseDouble(tempValue.getText().toString()));
-                   double f2k = F2K(Double.parseDouble(tempValue.getText().toString()));
+                    fahr_result = String.valueOf(k2f);
+                    celsius_result = String.valueOf(k2c);
+                } else {
+                    fahr_result = tempValue.getText().toString();
+                    double f2c = F2C(Double.parseDouble(tempValue.getText().toString()));
+                    double f2k = F2K(Double.parseDouble(tempValue.getText().toString()));
 
-                   celsius_result = String.valueOf(f2c);
-                   kelvin_result = String.valueOf(f2k);
-               }
+                    celsius_result = String.valueOf(f2c);
+                    kelvin_result = String.valueOf(f2k);
+                }
 
-               celsius.setText(celsius_result);
-               fahrenheit.setText(fahr_result);
-               kelvin.setText(kelvin_result);
+                celsius.setText(celsius_result);
+                fahrenheit.setText(fahr_result);
+                kelvin.setText(kelvin_result);
 
             }
         });
@@ -88,29 +88,27 @@ public class CalcActivity extends AppCompatActivity {
 
     }
 
+    static double C2F(double c) {
+        return c * 1.8 + 32;
+    }
 
+    static double C2K(double c) {
+        return c + 273.15;
+    }
 
-            static double C2F(double c){
-                return c*1.8+32;
-            }
-            static double C2K(double c){
-                return c+273.15;
-            }
-            static double F2C(double f){
-                return (f-32)/1.8;
-            }
-            static double F2K(double f){
-                return (f+459.67)*5/9;
-            }
-            static double K2C(double k){
-                return k-273.15;
-            }
-            static double K2F(double k){
-                return k*1.8-459.67;
-            }
+    static double F2C(double f) {
+        return (f - 32) / 1.8;
+    }
 
+    static double F2K(double f) {
+        return (f + 459.67) * 5 / 9;
+    }
 
+    static double K2C(double k) {
+        return k - 273.15;
+    }
 
-
-
+    static double K2F(double k) {
+        return k * 1.8 - 459.67;
+    }
 }
